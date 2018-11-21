@@ -71,8 +71,8 @@ export class Elements extends React.Component<stripe.elements.ElementsCreateOpti
 }
 
 export function injectStripe<P extends object>(
-    WrappedComponent: React.ComponentType<P & ReactStripeElements.InjectedStripeProps>,
-    componentOptions?: ReactStripeElements.InjectOptions): React.ComponentType<P>;
+	WrappedComponent: React.ComponentType<P & ReactStripeElements.InjectedStripeProps>,
+	componentOptions?: ReactStripeElements.InjectOptions): React.ComponentType<P>;
 
 export class CardElement extends React.Component<ReactStripeElements.ElementProps> {
 }
@@ -90,4 +90,7 @@ export class PostalCodeElement extends React.Component<ReactStripeElements.Eleme
 }
 
 export class PaymentRequestButtonElement extends React.Component<ReactStripeElements.ElementProps> {
+}
+
+export class IbanElement extends React.Component<ReactStripeElements.ElementProps> {
 }
